@@ -1,6 +1,6 @@
 ## Welcome to My GitHub Pages
 
-[project1](https://github.com/lenguyen2022/lenguyen/edit/main/index.md) [project1](https://github.com/lenguyen2022/lenguyen/edit/main/index.md) [project1](https://github.com/lenguyen2022/lenguyen/edit/main/index.md)
+[Project1](https://github.com/lenguyen2022/lenguyen/edit/main/project1.md)  [Project2](https://github.com/lenguyen2022/lenguyen/edit/main/project2.md)  [Project3](https://github.com/lenguyen2022/lenguyen/edit/main/project3.md)
 
 You can use the [editor on GitHub](https://github.com/lenguyen2022/lenguyen/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
 
