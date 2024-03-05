@@ -1,4 +1,5 @@
 ## Welcome to My GitHub Pages
+[Slides Link](https://1drv.ms/p/s!ArVCA0MmTgppkq58_RGNw8FQriJzIg?e=Y19aqo)
 
 [Project1](https://github.com/lenguyen2022/lenguyen/edit/main/project1.md)  [Project2](https://github.com/lenguyen2022/lenguyen/edit/main/project2.md)  [Project3](https://github.com/lenguyen2022/lenguyen/edit/main/project3.md)
 
