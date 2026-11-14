@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Le Nguyen — Portfolio & Projects</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --surface: #1e293b;
+      --surface-hover: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent: #38bdf8;
+      --accent-glow: rgba(56, 189, 248, 0.15);
+      --border: #334155;
+      --radius: 12px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2rem 1.25rem;
+    }
+
+    .container {
+      max-width: 880px;
+      margin: 0 auto;
+    }
+
+    /* Navigation */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 3rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 1.2rem;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    nav a {
+      color: var(--text-muted);
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 4rem 0 3rem;
+    }
+
+    .badge {
+      display: inline-block;
+      background: var(--accent-glow);
+      color: var(--accent);
+      padding: 0.3rem 0.75rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+      border: 1px solid rgba(56, 189, 248, 0.3);
+    }
+
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      color: var(--text-muted);
+      font-size: 1.15rem;
+      max-width: 620px;
+      margin-bottom: 2rem;
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.7rem 1.4rem;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: transform 0.15s, background-color 0.2s;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      background-color: var(--accent);
+      color: #0f172a;
+    }
+
+    .btn-secondary {
+      background-color: var(--surface);
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    .btn-secondary:hover {
+      background-color: var(--surface-hover);
+    }
+
+    /* Projects Grid */
+    .section-title {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin: 2rem 0 1.25rem;
+      letter-spacing: -0.02em;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .card {
+      background-color: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+
+    .card:hover {
+      border-color: var(--accent);
+      transform: translateY(-3px);
+    }
+
+    .card h3 {
+      font-size: 1.15rem;
+      margin-bottom: 0.5rem;
+      color: var(--text);
+    }
+
+    .card p {
+      color: var(--text-muted);
+      font-size: 0.92rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+
+    .tag {
+      font-size: 0.75rem;
+      background: rgba(15, 23, 42, 0.6);
+      color: var(--accent);
+      padding: 0.2rem 0.55rem;
+      border-radius: 6px;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a href="#" class="logo">lenguyen</a>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="https://github.com/lenguyen2022" target="_blank">GitHub</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <span class="badge">Data Mining • Machine Learning • Systems</span>
+      <h1>Building intelligent systems &amp; teaching clean code.</h1>
+      <p>
+        Welcome to my GitHub Pages hub. Explore lecture demos, data mining implementations, 
+        and software engineering projects below.
+      </p>
+      <div class="btn-group">
+        <a href="#projects" class="btn btn-primary">Explore Projects</a>
+        <a href="Demo-Slides-URL" class="btn btn-secondary">Demo Slides</a>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="grid">
+        <a href="project1.html" class="card">
+          <div>
+            <h3>Project 1</h3>
+            <p>A concise summary of the problem solved, methodology used, and key results achieved.</p>
+          </div>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Data Mining</span>
+          </div>
+        </a>
+
+        <a href="project2.html" class="card">
+          <div>
+            <h3>Project 2</h3>
+            <p>Interactive analysis and algorithmic implementation built from first principles.</p>
+          </div>
+          <div class="tags">
+            <span class="tag">NumPy</span>
+            <span class="tag">Machine Learning</span>
+          </div>
+        </a>
+
+        <a href="project3.html" class="card">
+          <div>
+            <h3>Project 3</h3>
+            <p>Knowledge representation, ontology querying, and structured data pipelines.</p>
+          </div>
+          <div class="tags">
+            <span class="tag">OWL / RDF</span>
+            <span class="tag">Systems</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section id="about" style="margin-top: 3rem;">
+      <h2 class="section-title">About</h2>
+      <p style="color: var(--text-muted);">
+        This site is hosted directly on GitHub Pages. Each project page includes source code links, 
+        mathematical breakdowns, and reproducible examples.
+      </p>
+    </section>
+
+    <footer>
+      <span>© 2026 Le Nguyen</span>
+      <span>Built with static HTML &amp; CSS • Hosted on <a href="https://pages.github.com/">GitHub Pages</a></span>
+    </footer>
+  </div>
+</body>
+</html>
